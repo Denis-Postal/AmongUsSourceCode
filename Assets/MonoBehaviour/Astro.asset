@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b31f4d0f23be9455bcc9a941106296fd, type: 3}
+  m_Name: Astro
+  m_EditorClassIdentifier:
+  IdleFrame: {fileID: 21300000, guid: 337be54a9d104ae45be95024cb9c4bc3, type: 2}
+  IdleAnim: {fileID: 7400000, guid: 80147fcb1c0d50f44a881c9568c7e39f, type: 2}
+  RunAnim: {fileID: 7400000, guid: aa8270319288bd24a9bfd8c1525f3102, type: 2}
+  EnterVentAnim: {fileID: 7400000, guid: d357a4d6cef7a324094cea1fac22ac00, type: 2}
+  ExitVentAnim: {fileID: 7400000, guid: 606712ffa18f2da49ae682aa3cea9e25, type: 2}
+  KillTongueImpostor: {fileID: 7400000, guid: 248c066b1782439408a31152454cc07a, type: 2}
+  KillTongueVictim: {fileID: 7400000, guid: f11cdfea134e7414786c640da047812b, type: 2}
+  KillShootImpostor: {fileID: 7400000, guid: ca51890a19acbb440a338ef8bbcdfb5e, type: 2}
+  KillShootVictim: {fileID: 7400000, guid: 73fe3c2de166d0d4ba2b381cef6dc4ef, type: 2}
+  KillStabVictim: {fileID: 7400000, guid: a920283bc9db8a942836dbcf34f553a1, type: 2}
+  KillNeckVictim: {fileID: 7400000, guid: 92aaf276d4b4fde4aaaaeeb8bbb64971, type: 2}
+  EjectFrame: {fileID: 21300000, guid: c78007e94fb57134eab6f184a1dfaa03, type: 2}
+  SpawnAnim: {fileID: 7400000, guid: c4b7b3db04caaca46b2dd3588b16637c, type: 2}
+  Free: 0
+  RelatedHat: {fileID: 11400000, guid: 69970602d738b314983fde11ce69fb3b, type: 2}
+  StoreName: Astronaut (includes hat!)
+  Order: 0

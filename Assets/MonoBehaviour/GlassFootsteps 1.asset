@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6633565c32bcb2522138b426775ef120, type: 3}
+  m_Name: GlassFootsteps 1
+  m_EditorClassIdentifier:
+  Clips:
+  - {fileID: 8300000, guid: 139ca8293069df94fa6b0c8633a641ea, type: 3}
+  - {fileID: 8300000, guid: 00fce1835b31c8443aa3c4475fb09c1d, type: 3}
+  - {fileID: 8300000, guid: 760dc9fd3eee75543b98c0d71ef71bd3, type: 3}
+  - {fileID: 8300000, guid: 1bc1136075477234bb2929a2b643a89e, type: 3}
+  - {fileID: 8300000, guid: ccc0f23945b9bb943ae95d579d1d84e1, type: 3}
+  - {fileID: 8300000, guid: e5bdf5d15e5fd7847927b3f94040e0a8, type: 3}
+  - {fileID: 8300000, guid: d9933d3fe1696814c9393d3bf7919fe8, type: 3}

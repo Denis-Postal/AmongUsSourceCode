@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b31f4d0f23be9455bcc9a941106296fd, type: 3}
+  m_Name: None
+  m_EditorClassIdentifier:
+  IdleFrame: {fileID: 0}
+  IdleAnim: {fileID: 7400000, guid: 81bcb9828197b084e93666c534834ced, type: 2}
+  RunAnim: {fileID: 7400000, guid: 81bcb9828197b084e93666c534834ced, type: 2}
+  EnterVentAnim: {fileID: 7400000, guid: 81bcb9828197b084e93666c534834ced, type: 2}
+  ExitVentAnim: {fileID: 7400000, guid: 81bcb9828197b084e93666c534834ced, type: 2}
+  KillTongueImpostor: {fileID: 7400000, guid: 81bcb9828197b084e93666c534834ced, type: 2}
+  KillTongueVictim: {fileID: 7400000, guid: 81bcb9828197b084e93666c534834ced, type: 2}
+  KillShootImpostor: {fileID: 7400000, guid: 81bcb9828197b084e93666c534834ced, type: 2}
+  KillShootVictim: {fileID: 7400000, guid: 81bcb9828197b084e93666c534834ced, type: 2}
+  KillStabVictim: {fileID: 7400000, guid: 81bcb9828197b084e93666c534834ced, type: 2}
+  KillNeckVictim: {fileID: 7400000, guid: 81bcb9828197b084e93666c534834ced, type: 2}
+  EjectFrame: {fileID: 0}
+  SpawnAnim: {fileID: 7400000, guid: 81bcb9828197b084e93666c534834ced, type: 2}
+  Free: 1
+  RelatedHat: {fileID: 0}
+  StoreName:
+  Order: 1000

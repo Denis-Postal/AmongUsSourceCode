@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b31f4d0f23be9455bcc9a941106296fd, type: 3}
+  m_Name: Police_0
+  m_EditorClassIdentifier: 
+  IdleFrame: {fileID: 21300000, guid: c46bf0cc4690ce844a3847c1939f7e95, type: 2}
+  IdleAnim: {fileID: 7400000, guid: 59a6a10530037424889e10a08874bea7, type: 2}
+  RunAnim: {fileID: 7400000, guid: 5019868e3c8ffa84084731aab0fc4590, type: 2}
+  EnterVentAnim: {fileID: 7400000, guid: 77e8cbae33667aa4aae669023651a910, type: 2}
+  ExitVentAnim: {fileID: 7400000, guid: 085d0a7d36d50f0478340bad9845c1c1, type: 2}
+  KillTongueImpostor: {fileID: 7400000, guid: c64b660a7857d0841b0b73eb494d8f42, type: 2}
+  KillTongueVictim: {fileID: 7400000, guid: 08ca7f1dca360114fa1355e18b602926, type: 2}
+  KillShootImpostor: {fileID: 7400000, guid: 4e84bae2e6de0c94092a8d5aa6405420, type: 2}
+  KillShootVictim: {fileID: 7400000, guid: 661066d93f75957458cacab362f2db21, type: 2}
+  KillStabVictim: {fileID: 7400000, guid: 8c3c37bdeac015e4994059b10bd13a45, type: 2}
+  KillNeckVictim: {fileID: 7400000, guid: 1908c3774516644488ae313322511233, type: 2}
+  EjectFrame: {fileID: 21300000, guid: f2c995487a4d6464fba7e4085af4715c, type: 2}
+  SpawnAnim: {fileID: 7400000, guid: 54d13bfb46369d84c94d2b228c3969e7, type: 2}
+  Free: 0
+  RelatedHat: {fileID: 11400000, guid: 33418f1958069464e8987578ca02ff4f, type: 2}
+  StoreName: Police (includes hat!)
+  Order: 0

@@ -1,0 +1,162 @@
+using PowerTools;
+using UnityEngine;
+
+public class Vent : MonoBehaviour, IUsable
+{
+	public int Id;
+
+	public Vent Left;
+
+	public Vent Right;
+
+	public Vent Center;
+
+	public ButtonBehavior[] Buttons;
+
+	public AnimationClip EnterVentAnim;
+
+	public AnimationClip ExitVentAnim;
+
+	private static readonly Vector3 CollOffset = new Vector3(0f, -0.3636057f, 0f);
+
+	private SpriteRenderer myRend;
+
+	public float UsableDistance => 0.75f;
+
+	public float PercentCool => 0f;
+
+	private void Start()
+	{
+		SetButtons(enabled: false);
+		myRend = GetComponent<SpriteRenderer>();
+	}
+
+	public void SetButtons(bool enabled)
+	{
+		Vent[] array = new Vent[3] { Right, Left, Center };
+		for (int i = 0; i < Buttons.Length; i++)
+		{
+			ButtonBehavior buttonBehavior = Buttons[i];
+			if (enabled)
+			{
+				Vent vent = array[i];
+				if ((bool)vent)
+				{
+					buttonBehavior.gameObject.SetActive(value: true);
+					Vector3 localPosition = (vent.transform.position - base.transform.position).normalized * 0.7f;
+					localPosition.y -= 0.08f;
+					localPosition.z = -10f;
+					buttonBehavior.transform.localPosition = localPosition;
+					buttonBehavior.transform.LookAt2d(vent.transform);
+				}
+				else
+				{
+					buttonBehavior.gameObject.SetActive(value: false);
+				}
+			}
+			else
+			{
+				buttonBehavior.gameObject.SetActive(value: false);
+			}
+		}
+	}
+
+	public float CanUse(GameData.PlayerInfo pc, out bool canUse, out bool couldUse)
+	{
+		float num = float.MaxValue;
+		PlayerControl playerControl = pc.Object;
+		couldUse = pc.IsImpostor && !pc.IsDead && (playerControl.CanMove || playerControl.inVent);
+		canUse = couldUse;
+		if (canUse)
+		{
+			num = Vector2.Distance(playerControl.GetTruePosition(), base.transform.position);
+			canUse &= num <= UsableDistance;
+		}
+		return num;
+	}
+
+	public void SetOutline(bool on, bool mainTarget)
+	{
+		myRend.material.SetFloat("_Outline", on ? 1 : 0);
+		myRend.material.SetColor("_OutlineColor", Color.red);
+		myRend.material.SetColor("_AddColor", mainTarget ? Color.red : Color.clear);
+	}
+
+	public void ClickRight()
+	{
+		if ((bool)Right && PlayerControl.LocalPlayer.inVent)
+		{
+			DoMove(Right.transform.position - CollOffset);
+			SetButtons(enabled: false);
+			Right.SetButtons(enabled: true);
+		}
+	}
+
+	public void ClickLeft()
+	{
+		if ((bool)Left && PlayerControl.LocalPlayer.inVent)
+		{
+			DoMove(Left.transform.position - CollOffset);
+			SetButtons(enabled: false);
+			Left.SetButtons(enabled: true);
+		}
+	}
+
+	public void ClickCenter()
+	{
+		if ((bool)Center && PlayerControl.LocalPlayer.inVent)
+		{
+			DoMove(Center.transform.position - CollOffset);
+			SetButtons(enabled: false);
+			Center.SetButtons(enabled: true);
+		}
+	}
+
+	private static void DoMove(Vector3 pos)
+	{
+		PlayerControl.LocalPlayer.NetTransform.RpcSnapTo(pos);
+		if (Constants.ShouldPlaySfx())
+		{
+			SoundManager.Instance.PlaySound(PlayerControl.LocalPlayer.VentMoveSounds.Random(), loop: false).pitch = FloatRange.Next(0.8f, 1.2f);
+		}
+	}
+
+	public void Use()
+	{
+		CanUse(PlayerControl.LocalPlayer.Data, out var canUse, out var _);
+		if (canUse)
+		{
+			PlayerControl localPlayer = PlayerControl.LocalPlayer;
+			if (localPlayer.inVent)
+			{
+				localPlayer.MyPhysics.RpcExitVent(Id);
+				SetButtons(enabled: false);
+			}
+			else
+			{
+				localPlayer.MyPhysics.RpcEnterVent(Id);
+				SetButtons(enabled: true);
+			}
+		}
+	}
+
+	internal void EnterVent(PlayerControl pc)
+	{
+		GetComponent<SpriteAnim>().Play(EnterVentAnim);
+		if (pc.AmOwner && Constants.ShouldPlaySfx())
+		{
+			SoundManager.Instance.StopSound(pc.VentEnterSound);
+			SoundManager.Instance.PlaySound(pc.VentEnterSound, loop: false).pitch = FloatRange.Next(0.8f, 1.2f);
+		}
+	}
+
+	internal void ExitVent(PlayerControl pc)
+	{
+		GetComponent<SpriteAnim>().Play(ExitVentAnim);
+		if (pc.AmOwner && Constants.ShouldPlaySfx())
+		{
+			SoundManager.Instance.StopSound(pc.VentEnterSound);
+			SoundManager.Instance.PlaySound(pc.VentEnterSound, loop: false).pitch = FloatRange.Next(0.8f, 1.2f);
+		}
+	}
+}

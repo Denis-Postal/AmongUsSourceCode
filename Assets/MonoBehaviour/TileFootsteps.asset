@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6633565c32bcb2522138b426775ef120, type: 3}
+  m_Name: TileFootsteps
+  m_EditorClassIdentifier:
+  Clips:
+  - {fileID: 8300000, guid: 963017cd846237d4b9fa15e9dac9bfb0, type: 3}
+  - {fileID: 8300000, guid: 0f2c108ea04adbc438ab001de7ee7428, type: 3}
+  - {fileID: 8300000, guid: 69c54acf383021048b6bb8cb65ccd3c0, type: 3}
+  - {fileID: 8300000, guid: df6b0fd315e2cfc40b7c5b71396a1a2c, type: 3}
+  - {fileID: 8300000, guid: dfa30070a69f39848ab3d42ce939d696, type: 3}
+  - {fileID: 8300000, guid: c3c0228749faab24891f5fd42f7801db, type: 3}
+  - {fileID: 8300000, guid: 24f888835d265d7489f6e8dde4fb7b73, type: 3}

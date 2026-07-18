@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b31f4d0f23be9455bcc9a941106296fd, type: 3}
+  m_Name: Wall
+  m_EditorClassIdentifier:
+  IdleFrame: {fileID: 21300000, guid: be6264431e876404da29bf55600f9b85, type: 2}
+  IdleAnim: {fileID: 7400000, guid: 1d71d7da0e4d714428c4f810d086ab45, type: 2}
+  RunAnim: {fileID: 7400000, guid: 234a0b70f3d61c44c9b0b4bdf62e6c32, type: 2}
+  EnterVentAnim: {fileID: 7400000, guid: 7e1188c51eccd4c4d9ecae7f7aeffc08, type: 2}
+  ExitVentAnim: {fileID: 7400000, guid: 508b5644e31ba1b4ca474b9ad50351f2, type: 2}
+  KillTongueImpostor: {fileID: 7400000, guid: 2aa5063567c4aad41b6b30625c1909e3, type: 2}
+  KillTongueVictim: {fileID: 7400000, guid: 1a1c2a29373b2bf43bce5a3653304d25, type: 2}
+  KillShootImpostor: {fileID: 7400000, guid: dbcdd1e72fedb8548ac1fa94de1c332f, type: 2}
+  KillShootVictim: {fileID: 7400000, guid: 9f346603cf316384abc1c523ba50974f, type: 2}
+  KillStabVictim: {fileID: 7400000, guid: 2003c7c62662fb341a9aa9cd35fe3655, type: 2}
+  KillNeckVictim: {fileID: 7400000, guid: ae45a4078ef6a4d47bdfc879bbf2385e, type: 2}
+  EjectFrame: {fileID: 21300000, guid: 4287743dd0a7f0f468be4dde5717b8e5, type: 2}
+  SpawnAnim: {fileID: 7400000, guid: 65814f4ac67d0a7408bee71e3e4968c3, type: 2}
+  Free: 0
+  RelatedHat: {fileID: 11400000, guid: 55d9f2282e69ed74a878c71060a1af0b, type: 2}
+  StoreName: Wall Guard (includes hat!)
+  Order: 0

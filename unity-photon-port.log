@@ -1,0 +1,37 @@
+Initiating legacy licensing module
+
+LICENSE SYSTEM [202666 21:53:59] Next license update check is after 2026-06-07T15:42:08
+
+Built from '2019.2/staging' branch; Version is '2019.2.0f1 (20c1667945cf) revision 2146662'; Using compiler version '191627012'
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'ru' Physical Memory: 32677 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+[Package Manager] Server::Start -- Port 57945 was selected
+
+ COMMAND LINE ARGUMENTS:
+D:\UNITY6000\2019.2.0f1\Editor\Unity.exe
+-batchmode
+-quit
+-projectPath
+C:\Users\dasf9\Desktop\uvebania\ClassicAmongUs\ClassicAmongUs
+-logFile
+.\unity-photon-port.log
+Successfully changed project path to: C:\Users\dasf9\Desktop\uvebania\ClassicAmongUs\ClassicAmongUs
+C:/Users/dasf9/Desktop/uvebania/ClassicAmongUs/ClassicAmongUs
+It looks like another Unity instance is running with this project open.
+
+Multiple Unity instances cannot open the same project.
+
+Project: C:/Users/dasf9/Desktop/uvebania/ClassicAmongUs/ClassicAmongUs
+ 
+(Filename: C:\buildslave\unity\build\Editor/Src/Application/Application.cpp Line: 384)
+
+Fatal Error! It looks like another Unity instance is running with this project open.
+
+Multiple Unity instances cannot open the same project.
+
+Project: C:/Users/dasf9/Desktop/uvebania/ClassicAmongUs/ClassicAmongUs
+
+ 
+(Filename: C:\buildslave\unity\build\Runtime/Utilities/Argv.cpp Line: 358)
+
+Exiting without the bug reporter. Application will terminate with return code 1

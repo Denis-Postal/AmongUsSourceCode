@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b53e56ceca9413d48006facba964507, type: 3}
+  m_Name: Portuguese
+  m_EditorClassIdentifier:
+  Images:
+  - Name: 0
+    Sprite: {fileID: 21300000, guid: 79804784808f52b418d57cda32d93609, type: 2}
+  - Name: 1
+    Sprite: {fileID: 21300000, guid: 4aac1342cdc7bc6478ba55f6a461cea9, type: 2}
+  - Name: 2
+    Sprite: {fileID: 21300000, guid: 37a82341a351c4b41a6e98e2834ffaf8, type: 2}
+  - Name: 3
+    Sprite: {fileID: 21300000, guid: 5986794c0e1a4264588ef04d85b235ef, type: 2}
+  - Name: 4
+    Sprite: {fileID: 21300000, guid: 7c8e52e9e8532d240b2bdc1d5535d47c, type: 2}
+  - Name: 5
+    Sprite: {fileID: 21300000, guid: e1fb32de258d4314da592548a19f4aa5, type: 2}
+  - Name: 6
+    Sprite: {fileID: 21300000, guid: a850f40d8c9106b48ba19f9c4006f280, type: 2}

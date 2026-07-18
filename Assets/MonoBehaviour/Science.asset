@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b31f4d0f23be9455bcc9a941106296fd, type: 3}
+  m_Name: Science
+  m_EditorClassIdentifier:
+  IdleFrame: {fileID: 21300000, guid: 983c1b8ef6ffa564dba10f5a04c0d77e, type: 2}
+  IdleAnim: {fileID: 7400000, guid: 15ecef51d7b99ba448413b74e16d4b0c, type: 2}
+  RunAnim: {fileID: 7400000, guid: 542d3ee4ebde8a44eab4edda9aa80266, type: 2}
+  EnterVentAnim: {fileID: 7400000, guid: 2ebeff7f769d15643919db436a5f1968, type: 2}
+  ExitVentAnim: {fileID: 7400000, guid: 02e021c9bc4660a4a9c93308e21decdd, type: 2}
+  KillTongueImpostor: {fileID: 7400000, guid: 5878239f11f94ea4ea61f2e764eef647, type: 2}
+  KillTongueVictim: {fileID: 7400000, guid: c9564550322f3f24fa0c6edd3bf754bc, type: 2}
+  KillShootImpostor: {fileID: 7400000, guid: f7162f8f2840c504e9f579853e27d45c, type: 2}
+  KillShootVictim: {fileID: 7400000, guid: 5c60ee6e2c2623c4083590f7430eb74c, type: 2}
+  KillStabVictim: {fileID: 7400000, guid: 0d18cef76016a9c4c8a3e4257db99531, type: 2}
+  KillNeckVictim: {fileID: 7400000, guid: f32da1007eb68f84f87549e2d9559e5e, type: 2}
+  EjectFrame: {fileID: 21300000, guid: 789e3886fe89eba45b42b801b5934eee, type: 2}
+  SpawnAnim: {fileID: 7400000, guid: c5f27fce49d28f34e97d91d918655202, type: 2}
+  Free: 0
+  RelatedHat: {fileID: 11400000, guid: 97456b0e7d7001f42a4fe11466fd819f, type: 2}
+  StoreName: Doctor (includes hat!)
+  Order: 0

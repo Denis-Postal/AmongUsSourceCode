@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac36e98c72b3b2e7cfd9a82b4664a849, type: 3}
+  m_Name: Stethescope
+  m_EditorClassIdentifier:
+  MainImage: {fileID: 21300000, guid: 7d607eb25b19ae84ba3aa789a1ef0c33, type: 2}
+  FloorImage: {fileID: 21300000, guid: d2656c93614af7e4b9ba1e7fead2a3d0, type: 2}
+  InFront: 1
+  Free: 0
+  LimitedMonth: 0
+  LimitedYear: 0
+  RelatedSkin: {fileID: 11400000, guid: 85508a6d64b718c48ade8869298253c1, type: 2}
+  StoreName:
+  ProductId: hat_stethescope
+  Order: 0

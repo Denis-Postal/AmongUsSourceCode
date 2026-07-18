@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b31f4d0f23be9455bcc9a941106296fd, type: 3}
+  m_Name: SuitB
+  m_EditorClassIdentifier:
+  IdleFrame: {fileID: 21300000, guid: 69fdc820549f8c54caaea4e1b0629001, type: 2}
+  IdleAnim: {fileID: 7400000, guid: b482b7f1153c7c741a2484abef0fdb6d, type: 2}
+  RunAnim: {fileID: 7400000, guid: 790a7cc301fd9df4f8ff48a81d056c1c, type: 2}
+  EnterVentAnim: {fileID: 7400000, guid: 14055aee1098c1b4982c6938fc549714, type: 2}
+  ExitVentAnim: {fileID: 7400000, guid: 551aa66e085aebb4380d5b224310c2f6, type: 2}
+  KillTongueImpostor: {fileID: 7400000, guid: f3386bba771d05443838fabceb756c02, type: 2}
+  KillTongueVictim: {fileID: 7400000, guid: 8a58e136444b41b4aa2d04cf227ed5f3, type: 2}
+  KillShootImpostor: {fileID: 7400000, guid: 9187c4b1f4a2e844783422b4fe2e365b, type: 2}
+  KillShootVictim: {fileID: 7400000, guid: a70016ab764543749b2f3333a48b6dd8, type: 2}
+  KillStabVictim: {fileID: 7400000, guid: c4bc2a795b90424418d139531b7bed74, type: 2}
+  KillNeckVictim: {fileID: 7400000, guid: 13188e5c7f5072b4ead8d8432282376f, type: 2}
+  EjectFrame: {fileID: 21300000, guid: 9653983f1c66fba438fb6023e27431af, type: 2}
+  SpawnAnim: {fileID: 7400000, guid: 45e992e2174ca074fb706995b036c55e, type: 2}
+  Free: 0
+  RelatedHat: {fileID: 11400000, guid: 6ca0b18e4d0a47045aee87b8ad6d2755, type: 2}
+  StoreName: Black Suit (includes hat!)
+  Order: 0
